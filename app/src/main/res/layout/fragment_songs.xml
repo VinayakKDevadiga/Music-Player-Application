@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F8">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#00FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:background="@color/purple_200"
+            android:backgroundTint="#A4D677E6"
+            android:fontFamily="serif"
+            android:gravity="center_horizontal"
+            android:text="The List of the Songs that can be Played Presented Below"
+            android:textColor="#0C0C0C"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="569dp"
+            android:background="@drawable/img_19">
+
+        </ListView>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,64 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/download2"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:gravity="center"
+            android:text="Welcome to the World of Music!"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Select a Song by Clicking on Play Music! or Download the Song by Clicking on Download Song!" />
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:background="#A9F1DD"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="Play Music" />
+
+            <Button
+                android:id="@+id/download"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Download Song" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fragmentcontainer"
+            android:name="com.example.musicplayer.PlayMusic"
+            android:layout_width="match_parent"
+            android:layout_height="549dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/img_5" />
+
+    </LinearLayout>
+</ScrollView>
